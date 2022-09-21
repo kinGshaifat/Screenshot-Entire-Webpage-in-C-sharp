@@ -2,4 +2,4 @@ Install packages from Nuget
 
 1. Selenium.PhantomJS.WebDriver
 2. Selenium.Support
-3. Selenium.WebDriver
+3. Selenium.WebDriver //Install version 3.11.2 as The PhantomJS project and its driver are no longer being maintained.
