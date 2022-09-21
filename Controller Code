@@ -1,0 +1,16 @@
+namespace TestScreenshot.Controllers
+{
+    public class DataController : Controller
+    {
+      public static PhantomJSDriver driver1;
+
+        public void phantom()
+        {
+            driver1 = new PhantomJSDriver();
+            driver1.Manage().Window.Size = new System.Drawing.Size(1280, 1024);
+            driver1.Navigate().GoToUrl("http://skshaifatmurshed.wordpress.com/");
+            driver1.GetScreenshot().SaveAsFile(@"D://Scrrenshotwebs/ShaifatindexPage.jpg");
+            driver1.Quit();
+        }
+     }
+}
